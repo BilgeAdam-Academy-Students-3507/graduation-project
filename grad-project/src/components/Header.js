@@ -1,6 +1,8 @@
 import Typewriter from 'typewriter-effect'
+import React from 'react'
+import ThemeToggler from './ThemeToggler'
 
-const Header = () => {
+const Header = ({ setTheme }) => {
   return (
     <>
       <nav className="navbar">
@@ -9,7 +11,8 @@ const Header = () => {
         </div>
         <div className="navbar-buttons">
           <button>Language</button>
-          <button>Dark/Light</button>
+          {/* setTheme propunu burada aktarıyoruz */}
+          <ThemeToggler setTheme={setTheme} />
         </div>
       </nav>
       <div>
