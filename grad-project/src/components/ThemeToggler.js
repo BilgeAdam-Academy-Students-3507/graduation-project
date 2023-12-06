@@ -1,12 +1,8 @@
-// ThemeToggler.js
 import React from 'react'
-// import { useTheme } from 'styled-components'
+import { useGradContext } from '@/context'
 
-const ThemeToggler = ({ setTheme }) => {
-  const toggleTheme = () => {
-    console.log('Toggle theme called')
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
-  }
+const ThemeToggler = () => {
+  const { toggleTheme } = useGradContext()
 
   return <button onClick={toggleTheme}>Dark/Light</button>
 }

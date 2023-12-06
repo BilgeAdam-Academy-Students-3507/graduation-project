@@ -1,8 +1,9 @@
 import Typewriter from 'typewriter-effect'
 import React from 'react'
 import ThemeToggler from './ThemeToggler'
-
-const Header = ({ setTheme }) => {
+import { useGradContext } from '../context'
+const Header = () => {
+  const { setTheme } = useGradContext()
   return (
     <>
       <nav className="navbar">
@@ -11,8 +12,8 @@ const Header = ({ setTheme }) => {
         </div>
         <div className="navbar-buttons">
           <button>Language</button>
-          {/* setTheme propunu burada aktarıyoruz */}
-          <ThemeToggler setTheme={setTheme} />
+
+          <ThemeToggler />
         </div>
       </nav>
       <div>
