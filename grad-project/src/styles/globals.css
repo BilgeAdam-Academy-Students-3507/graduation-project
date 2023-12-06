@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Typewriter {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+  font-weight: 800;
+}
+
+body {
+  background-color: #1864ab;
+  color: #e7f5ff;
+}
+
+.class-code {
+  text-align: center;
+}
+
+/* CAROUSEL */
+.slick-arrow {
+  display: none !important;
+}
+
+h3 > img {
+  border-radius: 24px;
+  scale: 0.85;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #efefef;
+  align-items: center;
+}
+
+.ba-logo {
+  scale: 0.7;
+}
