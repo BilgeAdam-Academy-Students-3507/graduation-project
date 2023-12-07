@@ -1,8 +1,18 @@
-import { createContext } from 'react'
+import { createContext, useState, useContext } from 'react'
 
 export const gradContext = createContext()
 
+export function useGradContext() {
+  return useContext(gradContext)
+}
+
 function Provider({ children }) {
+  const [currentTheme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+  }
+
   const peopleData = [
     {
       id: 0,
@@ -60,6 +70,9 @@ function Provider({ children }) {
   ]
   const valueToShare = {
     peopleData,
+    currentTheme,
+    toggleTheme,
+    setTheme,
   }
   return (
     <gradContext.Provider value={valueToShare}>{children}</gradContext.Provider>
