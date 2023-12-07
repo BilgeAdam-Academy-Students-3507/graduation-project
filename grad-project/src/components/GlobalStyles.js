@@ -7,4 +7,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${(props) => props.theme.text};
     
   }
+  .navbar {
+    background-color: ${(props) => props.theme.navbar};
+    color: ${(props) => props.theme.text};
+  }
 `
