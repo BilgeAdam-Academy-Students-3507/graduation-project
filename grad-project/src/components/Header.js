@@ -2,6 +2,7 @@ import Typewriter from 'typewriter-effect'
 import React from 'react'
 import ThemeToggler from './ThemeToggler'
 import { useGradContext } from '../context'
+
 const Header = () => {
   const { setTheme } = useGradContext()
   return (
