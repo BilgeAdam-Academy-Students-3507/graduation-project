@@ -42,3 +42,22 @@ h3 > img {
 .ba-logo {
   scale: 0.7;
 }
+
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 550px;
+  background-color: #efefef;
+  align-items: center;
+  color:#1864ab;
+  height: 50px;
+}
+
+.ba-logo-small {
+  scale: 0.3;
+  width:300px;
+}
+
