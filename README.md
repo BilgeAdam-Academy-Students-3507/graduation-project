@@ -1,4 +1,4 @@
-*************************************** BilgeAdam Frontend students graduation-project*************************************************
+********************** BilgeAdam Frontend students graduation-project*********************************
 
 Project Title: Modern React Web Application with Next.js, Context API, and Material-UI
 
