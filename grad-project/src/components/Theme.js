@@ -9,7 +9,7 @@ export const lightTheme = {
 export const darkTheme = {
   body: '#1a1a1a',
   navbar: '#000',
-
+  footer: '#000',
   // text: '#fff',
   // buraya diğer dark mode stilleri eklenecek
 }
