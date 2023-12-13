@@ -26,6 +26,7 @@ React
 Context API
 Material-UI
 Next.js
+
 Why Choose Our Project?
 
 Scalability and Maintainability:
