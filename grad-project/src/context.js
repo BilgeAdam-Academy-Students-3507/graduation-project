@@ -8,6 +8,11 @@ export function useGradContext() {
 
 function Provider({ children }) {
   const [currentTheme, setTheme] = useState('light')
+  const [toggleLng, setToggleLng] = useState(false)
+
+  const handleToggleLng = () => {
+    setToggleLng((prevLang) => !prevLang)
+  }
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
@@ -18,8 +23,10 @@ function Provider({ children }) {
       id: 0,
       img: 'https://picsum.photos/id/237/300/300',
       fullName: 'Musa Dinç',
-      description:
-        "Hello! I'm Musa, a front-end developer with 1 year of experience in front-end development. I specialize in HTML, CSS, JavaScript, React, and Redux. I approach projects with a creative, solution-oriented, and customer-focused mindset. I have effective communication skills within the team and remain open to continuous learning. Feel free to reach out for collaboration or more information!",
+      description: {
+        tr: '',
+        en: "Hello! I'm Musa, a front-end developer with 1 year of experience in front-end development. I specialize in HTML, CSS, JavaScript, React, and Redux. I approach projects with a creative, solution-oriented, and customer-focused mindset. I have effective communication skills within the team and remain open to continuous learning. Feel free to reach out for collaboration or more information!",
+      },
       linkedin: 'https://www.linkedin.com/in/dincmusa/',
       github: 'https://github.com/dncmusa',
       medium: 'https://medium.com/@musadinc7',
@@ -32,8 +39,10 @@ function Provider({ children }) {
       id: 1,
       img: 'https://picsum.photos/id/27/300/300',
       fullName: 'Kevin Birkan Beyer',
-      description:
-        'I am a passionate Junior Front-End Developer with experience in HTML, CSS, JavaScript, and React, always eager to learn new technologies! 🧑‍💻',
+      description: {
+        tr: '',
+        en: "'I am a passionate Junior Front-End Developer with experience in HTML, CSS, JavaScript, and React, always eager to learn new technologies! 🧑‍💻',",
+      },
       linkedin: 'www.linkedin.com/in/kevin-birkan-beyer-778704144',
       github: 'https://github.com/Kev-BB',
       medium: 'https://medium.com/@Kev-BB',
@@ -46,8 +55,11 @@ function Provider({ children }) {
       id: 2,
       img: 'https://picsum.photos/id/238/300/300',
       fullName: 'İrfan Barış Özer',
-      description:
-        'Language enthusiast with a huge passion for coding and Web Development. As an ambitious individual, I am constantly striving to improve and determined to make a significant impact in the industry. With my dynamic and charismatic personality, I am confident that I can bring an unparalleled level of enthusiasm and energy to any team.',
+      description: {
+        tr: '',
+        en: "'Language enthusiast with a huge passion for coding and Web Development. As an ambitious individual, I am constantly striving to improve and determined to make a significant impact in the industry. With my dynamic and charismatic personality, I am confident that I can bring an unparalleled level of enthusiasm and energy to any team.',",
+      },
+
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -55,12 +67,14 @@ function Provider({ children }) {
       codeSandBox: 'link',
       portfolio: 'link',
     },
-
     {
       id: 3,
       img: 'https://picsum.photos/id/247/300/300',
       fullName: 'Musa Dinç',
-      description: 'lorem ipsum',
+      description: {
+        tr: '',
+        en: '',
+      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -72,7 +86,10 @@ function Provider({ children }) {
       id: 4,
       img: 'https://picsum.photos/id/247/300/300',
       fullName: 'Musa Dinç',
-      description: 'lorem ipsum',
+      description: {
+        tr: '',
+        en: '',
+      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -84,7 +101,10 @@ function Provider({ children }) {
       id: 5,
       img: 'https://picsum.photos/id/247/300/300',
       fullName: 'Musa Dinç',
-      description: 'lorem ipsum',
+      description: {
+        tr: '',
+        en: '',
+      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -96,7 +116,10 @@ function Provider({ children }) {
       id: 6,
       img: 'https://picsum.photos/id/247/300/300',
       fullName: 'Musa Dinç',
-      description: 'lorem ipsum',
+      description: {
+        tr: '',
+        en: '',
+      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -108,7 +131,10 @@ function Provider({ children }) {
       id: 7,
       img: 'https://picsum.photos/id/247/300/300',
       fullName: 'Musa Dinç',
-      description: 'lorem ipsum',
+      description: {
+        tr: '',
+        en: '',
+      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -122,6 +148,8 @@ function Provider({ children }) {
     currentTheme,
     toggleTheme,
     setTheme,
+    toggleLng,
+    handleToggleLng,
   }
   return (
     <gradContext.Provider value={valueToShare}>{children}</gradContext.Provider>

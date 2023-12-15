@@ -1,10 +1,22 @@
 import Typewriter from 'typewriter-effect'
-import React from 'react'
 import ThemeToggler from './ThemeToggler'
-import { useGradContext } from '../context'
+import LanguageToggler from './LanguageToggler'
+import { useGradContext } from '@/context'
+import { useEffect, useRef } from 'react'
 
 const Header = () => {
-  const { setTheme } = useGradContext()
+  const { toggleLng } = useGradContext()
+  const typewriterRef = useRef(null)
+
+  const writerSentences = {
+    tr: ['BilgeAdam Akademi Öğrencileri', 'BilgeAdam Akademi Geliştiricileri'],
+    en: ['BilgeAdam Academy Students', 'BilgeAdam Academy Developers'],
+  }
+
+  useEffect(() => {
+    console.log(toggleLng)
+  }, [toggleLng])
+
   return (
     <>
       <nav className="navbar">
@@ -12,8 +24,7 @@ const Header = () => {
           <img src="bilgeadam-technologies-logo.png" alt="bilge-adam-logo" />
         </div>
         <div className="navbar-buttons">
-          <button>Language</button>
-
+          <LanguageToggler />
           <ThemeToggler />
         </div>
       </nav>
@@ -24,12 +35,12 @@ const Header = () => {
             loop: true,
           }}
           onInit={(typewriter) => {
+            typewriterRef.current = typewriter
             typewriter
-              .typeString('BilgeAdam Academy Students')
-              .pauseFor(2500)
-              .deleteChars(8)
-              .typeString('Developers')
-              .pauseFor(2500)
+              .typeString(writerSentences[toggleLng ? 'en' : 'tr'][0])
+              .pauseFor(2000)
+              .deleteAll()
+              .typeString(writerSentences[toggleLng ? 'en' : 'tr'][1])
               .start()
           }}
         />
