@@ -2,13 +2,14 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
+import classes from '../styles/Card.module.css'
+
 import { Button, CardActionArea, CardActions } from '@mui/material'
 import { useGradContext } from '@/context'
-import classes from '../styles/Card.module.css'
 import { useState } from 'react'
 
 export default function ProfileCard() {
-  const { peopleData } = useGradContext()
+  const { peopleData, toggleLng } = useGradContext()
   const [hoveredCardId, setHoveredCardId] = useState(null)
   return (
     <div className={classes.container}>
@@ -42,7 +43,7 @@ export default function ProfileCard() {
                   color="text.secondary"
                   className={classes.cardDescription}
                 >
-                  {person.description}
+                  {toggleLng ? person.description.en : person.description.tr}
                 </Typography>
               </CardContent>
             </CardActionArea>
