@@ -10,7 +10,7 @@ const ThemeToggler = () => {
   // export default ThemeToggler
 
   return (
-    <div>
+    <div className='themeToggleContainer'>
       {/* Tema değiştiriciyi temsil eden bir checkbox inputu. Tıklanıldığında toggleTheme fonksiyonu çağrılır. */}
       <input
         className="darkmode-toggle"

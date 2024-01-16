@@ -43,7 +43,7 @@ function Provider({ children }) {
         tr: '',
         en: "'I am a passionate Junior Front-End Developer with experience in HTML, CSS, JavaScript, and React, always eager to learn new technologies! 🧑‍💻',",
       },
-      linkedin: 'www.linkedin.com/in/kevin-birkan-beyer-778704144',
+      linkedin: 'https://www.linkedin.com/in/kevin-birkan-beyer-778704144',
       github: 'https://github.com/Kev-BB',
       medium: 'https://medium.com/@Kev-BB',
       codePen: 'https://codepen.io/Kev-BB',
