@@ -18,7 +18,7 @@ const Header = () => {
   }, [toggleLng])
 
   return (
-    <>
+    <div> 
       <nav className="navbar">
         <div className="ba-logo">
           <img src="bilgeadam-technologies-logo.png" alt="bilge-adam-logo" />
@@ -46,7 +46,7 @@ const Header = () => {
         />
         <h2 className="class-code">- 3507 -</h2>
       </div>
-    </>
+    </div>
   )
 }
 export default Header

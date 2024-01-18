@@ -6,12 +6,18 @@ import Header from './Header'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from './Theme'
 import { GlobalStyles } from './GlobalStyles'
+import { Rubik } from 'next/font/google'
+
+const rubik = Rubik({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 const App = () => {
   return (
     // Provider ile tüm uygulama içinde context'i kullanabiliriz
     <Provider>
-      <AppContent />
+      <AppContent className={rubik.className}/>
     </Provider>
   )
 }

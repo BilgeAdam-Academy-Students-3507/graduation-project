@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
 .Typewriter {
-  font-size: 4rem;
+  font-size: 4.5rem;
   width: 100%;
   text-align: center;
   margin-top: 5rem;
@@ -14,6 +18,7 @@
 body {
   background-color: #1864ab;
   color: #e7f5ff;
+  font-family: 'Rubik', sans-serif;
 }
 
 .class-code {
@@ -21,6 +26,9 @@ body {
 }
 
 /* CAROUSEL */
+.slick-list {
+  padding-bottom: 80px !important;
+}
 .slick-arrow {
   display: none !important;
 }
@@ -33,14 +41,25 @@ h3 > img {
 /* NAVBAR */
 
 .navbar {
+  height: 80px;
   display: flex;
   justify-content: space-between;
   background-color: #efefef;
   align-items: center;
 }
 
+.navbar-buttons{
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+
 .ba-logo {
-  scale: 0.7;
+  scale: 0.4;
+}
+
+.themeToggleContainer{
+  scale: 0.8;
 }
 
 
@@ -49,11 +68,11 @@ h3 > img {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-right: 550px;
+  padding-right: 20px;
   background-color: #efefef;
   align-items: center;
   color:#1864ab;
-  height: 50px;
+  height: 70px;
 }
 
 .ba-logo-small {
@@ -61,3 +80,16 @@ h3 > img {
   width:300px;
 }
 
+/* CARDS */
+.cardContainer{
+  background-color: #134E85;
+}
+
+.cardsHeader{
+  padding-top: 70px;
+line-height: 2rem;
+ font-size: 24px;
+ text-align: center;
+ width: 50%;
+ margin: 100px auto 0 auto
+}
