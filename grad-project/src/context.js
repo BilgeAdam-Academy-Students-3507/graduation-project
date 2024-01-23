@@ -1,4 +1,4 @@
-import { createContext, useState, useContext } from 'react'
+import { createContext, useState, useContext, useRef } from 'react'
 
 export const gradContext = createContext()
 
@@ -9,6 +9,29 @@ export function useGradContext() {
 function Provider({ children }) {
   const [currentTheme, setTheme] = useState('light')
   const [toggleLng, setToggleLng] = useState(false)
+  const targetRef = useRef([])
+  const addRef = (element) => {
+    if (element && !targetRef.current.includes(element)) {
+      targetRef.current.push(element)
+    }
+  }
+
+  function handleScroll(id) {
+    const targetElement = targetRef.current[id]
+    if (targetElement) {
+      const position = targetElement.getBoundingClientRect()
+
+      window.scrollTo({
+        top: position.top + window.scrollY,
+        left: position.left + window.scrollX,
+        behavior: 'smooth',
+      })
+      targetElement.style.boxShadow = '0px 1px 75px 19px rgba(145,145,145,1)'
+      setTimeout(() => {
+        targetElement.style.boxShadow = ''
+      }, 3000)
+    }
+  }
 
   const handleToggleLng = () => {
     setToggleLng((prevLang) => !prevLang)
@@ -21,10 +44,10 @@ function Provider({ children }) {
   const peopleData = [
     {
       id: 0,
-      img: 'https://picsum.photos/id/237/300/300',
+      img: 'musadinc.JPG',
       fullName: 'Musa Dinç',
       description: {
-        tr: '',
+        tr: 'Merhaba! Ben Musa, 1 yıllık bir ön yüz geliştiriciyim ve özellikle HTML, CSS, JavaScript, React ve Redux konularında uzmanlık sahibiyim. Projelere yaratıcı, çözüm odaklı ve müşteri odaklı bir bakış açısıyla yaklaşıyorum. Takım içinde etkili iletişim becerilerine sahibim ve sürekli öğrenmeye açık bir tutum sergiliyorum. İşbirliği veya daha fazla bilgi için gönül rahatlığıyla iletişime geçebilirsiniz!',
         en: "Hello! I'm Musa, a front-end developer with 1 year of experience in front-end development. I specialize in HTML, CSS, JavaScript, React, and Redux. I approach projects with a creative, solution-oriented, and customer-focused mindset. I have effective communication skills within the team and remain open to continuous learning. Feel free to reach out for collaboration or more information!",
       },
       linkedin: 'https://www.linkedin.com/in/dincmusa/',
@@ -150,6 +173,9 @@ function Provider({ children }) {
     setTheme,
     toggleLng,
     handleToggleLng,
+    targetRef,
+    addRef,
+    handleScroll,
   }
   return (
     <gradContext.Provider value={valueToShare}>{children}</gradContext.Provider>

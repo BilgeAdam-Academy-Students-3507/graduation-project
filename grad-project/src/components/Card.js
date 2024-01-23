@@ -1,27 +1,28 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import classes from "../styles/Card.module.css";
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import classes from '../styles/Card.module.css'
 
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import { useGradContext } from "@/context";
-import { useState } from "react";
+import { Button, CardActionArea, CardActions } from '@mui/material'
+import { useGradContext } from '@/context'
+import { useRef, useState } from 'react'
 
 export default function ProfileCard() {
-  const { peopleData, toggleLng } = useGradContext();
-  const [hoveredCardId, setHoveredCardId] = useState(null);
+  const { peopleData, toggleLng, targetRef, addRef } = useGradContext()
+  const [hoveredCardId, setHoveredCardId] = useState(null)
+
   return (
     <div className="cardContainer">
       <div className="cardsHeader">
-      <h1>About The Project</h1>
-      <p style={{marginTop: 30}}>
-        Our website is a platform that highlights the students who have
-        completed the front-end development bootcamp. This website features a
-        gallery of students, along with their names and a brief description of
-        their profile. Visitors can browse through the gallery and learn more
-        about each student by clicking on the provided links.{" "}
-      </p>
+        <h1>About The Project</h1>
+        <p style={{ marginTop: 30 }}>
+          Our website is a platform that highlights the students who have
+          completed the front-end development bootcamp. This website features a
+          gallery of students, along with their names and a brief description of
+          their profile. Visitors can browse through the gallery and learn more
+          about each student by clicking on the provided links.{' '}
+        </p>
       </div>
       <div className={classes.container}>
         {peopleData.map((person) => (
@@ -31,17 +32,19 @@ export default function ProfileCard() {
               className={classes.card}
               onMouseEnter={() => setHoveredCardId(person.id)}
               onMouseLeave={() => setHoveredCardId(null)}
+              ref={(element) => addRef(element)}
             >
               <CardActionArea>
                 <CardMedia
                   className={classes.cardImg}
                   component="img"
                   height="140"
-                  image="/ba-favicon.png"
+                  image="/bilgeadamakademilogo.png"
                   alt="green iguana"
                 />
                 <CardContent className={classes.cardContent}>
                   <Typography
+                    className="lightModeDescription"
                     gutterBottom
                     variant="h5"
                     component="div"
@@ -52,31 +55,47 @@ export default function ProfileCard() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className={classes.cardDescription}
+                    className={
+                      classes.cardDescription + ' ' + 'lightModeDescription'
+                    }
                   >
                     {toggleLng ? person.description.en : person.description.tr}
                   </Typography>
                 </CardContent>
               </CardActionArea>
               {hoveredCardId === person.id && (
-                <CardActions className={classes.linksArea}>
+                <CardActions
+                  className={classes.linksArea + ' ' + 'cardActions'}
+                >
                   <Button size="small" color="primary">
-                    <a target="_blank" href={person.linkedin}>LinkedIn</a>
+                    <a target="_blank" href={person.linkedin}>
+                      LinkedIn
+                    </a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a target="_blank" href={person.github}>Github</a>
+                    <a target="_blank" href={person.github}>
+                      Github
+                    </a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a target="_blank" href={person.medium}>Medium</a>
+                    <a target="_blank" href={person.medium}>
+                      Medium
+                    </a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a target="_blank" href={person.codePen}>CodePen</a>
+                    <a target="_blank" href={person.codePen}>
+                      CodePen
+                    </a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a target="_blank" href={person.codeSandBox}>CodeSandBox</a>
+                    <a target="_blank" href={person.codeSandBox}>
+                      CodeSandBox
+                    </a>
                   </Button>
                   <Button size="small" color="primary">
-                  <a target="_blank" href={person.portfolio}>Portfolio</a>
+                    <a target="_blank" href={person.portfolio}>
+                      Portfolio
+                    </a>
                   </Button>
                 </CardActions>
               )}
@@ -85,5 +104,5 @@ export default function ProfileCard() {
         ))}
       </div>
     </div>
-  );
+  )
 }

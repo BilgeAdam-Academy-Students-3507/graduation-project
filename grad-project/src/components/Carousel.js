@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const Carousel = () => {
-  const { peopleData } = useContext(gradContext)
+  const { peopleData, handleScroll } = useContext(gradContext)
   const settings = {
     infinite: true,
     speed: 1500,
@@ -14,43 +14,24 @@ const Carousel = () => {
     slidesToScroll: 1,
     autoplay: true,
   }
+
   return (
     <Slider {...settings} style={{ marginTop: '10rem' }}>
-      <div>
-        <h3>
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          {' '}
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          {' '}
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          {' '}
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          {' '}
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          {' '}
-          <img src={peopleData[0].img} alt="" />
-        </h3>
-      </div>
+      {peopleData.map((people) => {
+        return (
+          <div key={people.id}>
+            <h3>
+              <img
+                width={300}
+                height={300}
+                src={people.img}
+                alt={people.fullName}
+                onClick={() => handleScroll(people.id)}
+              />
+            </h3>
+          </div>
+        )
+      })}
     </Slider>
   )
 }
