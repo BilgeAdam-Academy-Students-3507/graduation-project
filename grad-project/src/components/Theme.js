@@ -7,9 +7,14 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-  body: '#1a1a1a',
-  navbar: '#000',
-  footer: '#000',
+  body: '#2f2b3a',
+  navbar: '#1a1625',
+  footer: '#2f2b3a',
+  cardContainer: '#1a1625',
+  Card_card__JwV2g: '#2f2b3a',
+  lightModeDescription: '#e7f5ff',
+  cardActions: '#5e5a66',
+
   // text: '#fff',
   // buraya diğer dark mode stilleri eklenecek
 }

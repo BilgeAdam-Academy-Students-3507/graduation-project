@@ -50,13 +50,19 @@
   justify-content: center;
   padding: 1rem;
   margin: 0 auto;
-  background-color: #fff !important;
+  background-color: #fff;
   /* min-height: 50px; */
+}
+
+.linksArea a {
+  text-decoration: none;
+  color: #e10a18;
 }
 
 .cardImg {
   border: 50% !important;
-  width: 150px;
+  width: 230px;
   height: 150px;
   margin: 0.2rem auto;
+  object-fit: contain;
 }

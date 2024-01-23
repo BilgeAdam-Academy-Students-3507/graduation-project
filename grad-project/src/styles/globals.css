@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +34,17 @@ body {
 h3 > img {
   border-radius: 24px;
   scale: 0.85;
+  object-fit: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 13px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 13px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+h3 > img:hover {
+  -webkit-box-shadow: 10px 13px 30px 0px rgba(166, 166, 166, 1);
+  -moz-box-shadow: 10px 13px 30px 0px rgba(166, 166, 166, 1);
+  box-shadow: 10px 13px 30px 0px rgba(166, 166, 166, 1);
 }
 
 /* NAVBAR */
@@ -48,7 +57,7 @@ h3 > img {
   align-items: center;
 }
 
-.navbar-buttons{
+.navbar-buttons {
   display: flex;
   align-items: flex-end;
   gap: 40px;
@@ -58,10 +67,9 @@ h3 > img {
   scale: 0.4;
 }
 
-.themeToggleContainer{
+.themeToggleContainer {
   scale: 0.8;
 }
-
 
 /* FOOTER */
 
@@ -71,25 +79,25 @@ h3 > img {
   padding-right: 20px;
   background-color: #efefef;
   align-items: center;
-  color:#1864ab;
+  color: #1864ab;
   height: 70px;
 }
 
 .ba-logo-small {
   scale: 0.3;
-  width:300px;
+  width: 300px;
 }
 
 /* CARDS */
-.cardContainer{
-  background-color: #134E85;
+.cardContainer {
+  background-color: #134e85;
 }
 
-.cardsHeader{
+.cardsHeader {
   padding-top: 70px;
-line-height: 2rem;
- font-size: 24px;
- text-align: center;
- width: 50%;
- margin: 100px auto 0 auto
+  line-height: 2rem;
+  font-size: 24px;
+  text-align: center;
+  width: 50%;
+  margin: 100px auto 0 auto;
 }
