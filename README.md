@@ -26,6 +26,8 @@
 
 Our website is a platform that highlights the students who have completed the front-end development bootcamp. The website features a gallery of students, along with their names and a brief description of their profile. Visitors can browse through the gallery and learn more about each student by clicking on the provided links. 
 
+Check out the project: graduation-project-flame.vercel.app/
+
 ## Built With
 
 Our graduation project was built using 
