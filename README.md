@@ -1,50 +1,88 @@
-********************** BilgeAdam Frontend students graduation-project*********************************
+<br/>
+<p align="center">
+  <a href="https://github.com/BilgeAdam-Academy-Students-3507/graduation-project">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxxKgXfL8o-2cmTm9kQ4V9gbXWoUaVXsuJINene5njg&s" alt="Logo" width="80" height="80">
+  </a>
 
-Project Title: Modern React Web Application with Next.js, Context API, and Material-UI
+  <h3 align="center">BilgeAdam Students
+ Graduation Project</h3>
 
-Description:
+</p>
 
-Explore the seamless synergy of cutting-edge web technologies with our latest project, a modern React web application built for optimal performance and user experience. Leveraging the power of React, Context API, Material-UI, and Next.js, this project exemplifies a robust and scalable architecture that delivers a delightful user interface.
+![Contributors](https://img.shields.io/github/contributors/BilgeAdam-Academy-Students-3507/graduation-project?color=dark-green) ![Forks](https://img.shields.io/github/forks/BilgeAdam-Academy-Students-3507/graduation-project?style=social) ![Issues](https://img.shields.io/github/issues/BilgeAdam-Academy-Students-3507/graduation-project) 
 
-Key Features:
+## Table Of Contents
 
-React at its Core:
-Embrace the power of React, the industry-leading JavaScript library for building user interfaces. Our project harnesses the declarative and component-based nature of React to ensure a modular and maintainable codebase.
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [Contributors](#contributors)
 
-State Management with Context API:
-Experience efficient state management through the Context API. By centralizing and providing a predictable state container, our application achieves a high level of data flow control, simplifying the development process and enhancing scalability.
 
-Material-UI Styling:
-Elevate the visual appeal of your web application with Material-UI, a popular React UI framework. Our project is adorned with sleek and responsive UI components, adhering to Google's Material Design principles for a polished and user-friendly aesthetic.
+## About The Project
 
-Next.js for Seamless Navigation:
-Benefit from the enhanced performance and SEO optimization offered by Next.js. With server-side rendering and automatic code splitting, our application ensures swift navigation and an optimized user experience.
+Our website is a platform that highlights the students who have completed the front-end development bootcamp. The website features a gallery of students, along with their names and a brief description of their profile. Visitors can browse through the gallery and learn more about each student by clicking on the provided links. 
 
-Technologies Used:
+Check out the project: [graduation-project-flame.vercel.app/](https://graduation-project-flame.vercel.app/)
 
-React
-Context API
-Material-UI
-Next.js
+## Built With
 
-Why Choose Our Project?
+Our graduation project was built using 
+- Next.js
+- React
+- Material UI
+- Typescript
 
-Scalability and Maintainability:
-The project architecture is designed for scalability and ease of maintenance, ensuring seamless updates and additions as your application grows.
+## Getting Started
 
-Aesthetic Appeal:
-Material-UI integration adds a touch of elegance and consistency to the user interface, providing a visually appealing and intuitive experience.
+To get a local copy up and running follow these simple example steps.
 
-Performance Optimization:
-Leveraging the power of Next.js, our application achieves optimal performance through server-side rendering and automatic code splitting.
+### Installation
 
-Get Started:
-Explore the future of web development with our project. Clone the repository, follow the simple installation steps, and dive into a world where React, Context API, Material-UI, and Next.js come together seamlessly to create a modern and feature-rich web application.
+1. Fork the repo
 
-See the site here:
+2. Clone the repo
 
-https://graduation-project-flame.vercel.app/
+```sh
+git clone https://github.com/your_username_/graduation-project.git
+```
 
-Note: Make sure to check the documentation for detailed setup instructions and additional features.
+3. Install NPM packages
 
-Unlock the potential of modern web development – try our project today!
+```sh
+npm install
+```
+
+## Roadmap
+
+See the [open issues](https://github.com/BilgeAdam-Academy-Students-3507/graduation-project/issues) for a list of proposed features (and known issues).
+
+## Contributing
+
+If you'd like to get involved, this is what you need to remember.
+- If you have suggestions for adding or removing projects, open an issue to discuss it
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
+
+### Creating A Pull Request
+
+1. Fork the Project
+2. Clone the repo
+```sh
+git clone https://github.com/your_username_/graduation-project.git
+```
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push`)
+5. Open a Pull Request
+
+## Contributors
+
+* **Kev-BB** - *Developer* - [Kev-BB](https://github.com/Kev-BB) - **
+* **hakankgn** - *Developer* - [hakankgn](https://github.com/hakankgn) - **
+* **dncmusa** - *Developer* - [dncmusa](https://github.com/dncmusa) - **
+* **seraykursunel** - *Developer* - [seraykursunel](https://github.com/seraykursunel) - **
+* **mahmetdursun** - *Developer* - [mahmetdursun](https://github.com/mahmetdursun) - **
+* **bseymad** - *Developer* - [bseymad](https://github.com/bseymad) - **
