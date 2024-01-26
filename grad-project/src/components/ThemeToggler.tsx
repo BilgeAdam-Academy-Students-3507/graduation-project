@@ -1,16 +1,12 @@
-import { useGradContext } from '@/context'
+import React from 'react'
+import { useGradContext } from '../context'
 import '../styles/ThemeToggler.css'
 
-const ThemeToggler = () => {
+const ThemeToggler: React.FC = () => {
   const { toggleTheme } = useGradContext()
 
-  //   return <button onClick={toggleTheme}>Dark/Light</button>
-  // }
-
-  // export default ThemeToggler
-
   return (
-    <div className='themeToggleContainer'>
+    <div className="themeToggleContainer">
       {/* Tema değiştiriciyi temsil eden bir checkbox inputu. Tıklanıldığında toggleTheme fonksiyonu çağrılır. */}
       <input
         className="darkmode-toggle"

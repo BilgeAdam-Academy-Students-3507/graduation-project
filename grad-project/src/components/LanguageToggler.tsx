@@ -1,11 +1,12 @@
-import { useGradContext } from '@/context'
+import React from 'react'
+import { useGradContext } from '../context'
 import { Switch } from '@mui/material'
 import trFlag from '../../public/turkey.png'
 import ukFlag from '../../public/united-kingdom.png'
 import Image from 'next/image'
 import '../styles/LanguageToggler.css'
 
-const LanguageToggler = () => {
+const LanguageToggler: React.FC = () => {
   const { toggleLng, handleToggleLng } = useGradContext()
 
   return (
@@ -23,4 +24,5 @@ const LanguageToggler = () => {
     </div>
   )
 }
+
 export default LanguageToggler

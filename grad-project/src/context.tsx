@@ -1,22 +1,71 @@
-import { createContext, useState, useContext, useRef } from 'react'
+import React, {
+  createContext,
+  useState,
+  useContext,
+  useRef,
+  ReactNode,
+  Dispatch,
+  SetStateAction,
+} from 'react'
 
-export const gradContext = createContext()
-
-export function useGradContext() {
-  return useContext(gradContext)
+interface Description {
+  tr: string
+  en: string
 }
 
-function Provider({ children }) {
+interface PersonData {
+  id: number
+  img: string
+  fullName: string
+  description: Description
+  linkedin: string
+  github: string
+  medium: string
+  codePen: string
+  codeSandBox: string
+  portfolio: string
+}
+
+export interface GradContextValue {
+  peopleData: PersonData[]
+  currentTheme: string
+  toggleTheme: () => void
+  setTheme: Dispatch<SetStateAction<string>>
+  toggleLng: boolean
+  handleToggleLng: () => void
+  targetRef: React.RefObject<HTMLElement[]>
+  addRef: (element: HTMLElement) => void
+  handleScroll: (id: number) => void
+}
+
+export const gradContext = createContext<GradContextValue | undefined>(
+  undefined
+)
+
+export function useGradContext() {
+  const context = useContext(gradContext)
+  if (!context) {
+    throw new Error('useGradContext must be used within a GradContextProvider')
+  }
+  return context
+}
+
+interface ProviderProps {
+  children: ReactNode
+}
+
+function Provider({ children }: ProviderProps) {
   const [currentTheme, setTheme] = useState('light')
   const [toggleLng, setToggleLng] = useState(false)
-  const targetRef = useRef([])
-  const addRef = (element) => {
+  const targetRef = useRef<HTMLElement[]>([])
+
+  const addRef = (element: HTMLElement) => {
     if (element && !targetRef.current.includes(element)) {
       targetRef.current.push(element)
     }
   }
 
-  function handleScroll(id) {
+  const handleScroll = (id: number) => {
     const targetElement = targetRef.current[id]
     if (targetElement) {
       const position = targetElement.getBoundingClientRect()
@@ -76,6 +125,21 @@ function Provider({ children }) {
 
     {
       id: 2,
+      img: 'https://i.hizliresim.com/qhs23fo.jpg',
+      fullName: 'Hakan Akgün',
+      description: {
+        tr: 'Web Geliştirme ve Ön Uç Geliştirme konusunda yetkin, React.js kullanarak etkileyici UI / UX için bir yetenek ile kullanıcı dostu uygulamalar oluşturma konusunda uzmanlaşmış Ön Uç Geliştirici. Git, TypeScript ve Bootstrap (Framework) konularında deneyimli. Hızlı, duyarlı ve keyifli web uygulamaları oluşturmasıyla tanınır. İşbirliğine açık bir takım oyuncusu.',
+        en: 'Frontend Developer proficient in Web Development and Front-End Development, specializing in creating userfriendly applications with a flair for impressive UI/UX using React.js. Experienced in Git, TypeScript, and Bootstrap (Framework). Known for building fast, responsive, and delightful web apps. A collaborative team player open to cooperation.',
+      },
+      linkedin: 'https://www.linkedin.com/in/hakankgn16',
+      github: 'https://github.com/hakankgn',
+      medium: 'https://medium.com/@hakanakgunplus',
+      codePen: 'link',
+      codeSandBox: 'link',
+      portfolio: 'https://hakanakgun.me/',
+    },
+    {
+      id: 3,
       img: 'https://picsum.photos/id/238/300/300',
       fullName: 'İrfan Barış Özer',
       description: {
@@ -83,21 +147,6 @@ function Provider({ children }) {
         en: "'Language enthusiast with a huge passion for coding and Web Development. As an ambitious individual, I am constantly striving to improve and determined to make a significant impact in the industry. With my dynamic and charismatic personality, I am confident that I can bring an unparalleled level of enthusiasm and energy to any team.',",
       },
 
-      linkedin: 'link',
-      github: 'link',
-      medium: 'link',
-      codePen: 'link',
-      codeSandBox: 'link',
-      portfolio: 'link',
-    },
-    {
-      id: 3,
-      img: 'https://picsum.photos/id/247/300/300',
-      fullName: 'Musa Dinç',
-      description: {
-        tr: '',
-        en: '',
-      },
       linkedin: 'link',
       github: 'link',
       medium: 'link',
@@ -166,7 +215,8 @@ function Provider({ children }) {
       portfolio: 'link',
     },
   ]
-  const valueToShare = {
+
+  const valueToShare: GradContextValue = {
     peopleData,
     currentTheme,
     toggleTheme,
@@ -177,6 +227,7 @@ function Provider({ children }) {
     addRef,
     handleScroll,
   }
+
   return (
     <gradContext.Provider value={valueToShare}>{children}</gradContext.Provider>
   )

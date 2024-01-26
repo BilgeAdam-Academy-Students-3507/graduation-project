@@ -13,32 +13,31 @@ const rubik = Rubik({
   subsets: ['latin'],
 })
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    // Provider ile tüm uygulama içinde context'i kullanabiliriz
     <Provider>
-      <AppContent className={rubik.className}/>
+      <AppContent />
     </Provider>
   )
 }
-// Tema ve global stilleri yöneten bileşen
-const ThemeWrapper = ({ children }) => {
+
+interface ThemeWrapperProps {
+  children: React.ReactNode
+}
+
+const ThemeWrapper: React.FC<ThemeWrapperProps> = ({ children }) => {
   const { currentTheme } = useGradContext()
 
   return (
-    // ThemeProvider ile mevcut temayı belirliyoruz
-    // GlobalStyles ile global stilleri uyguluyoruz
     <ThemeProvider theme={currentTheme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyles />
+      <GlobalStyles theme={currentTheme === 'light' ? lightTheme : darkTheme} />
       {children}
     </ThemeProvider>
   )
 }
 
-const AppContent = () => {
+const AppContent: React.FC = () => {
   return (
-    // Tüm içeriği ThemeWrapper ile sarmalıyoruz
-    // Bu sayede tüm içerik temayı ve global stilleri kullanabilir
     <ThemeWrapper>
       <Header />
       <Carousel />
