@@ -25,5 +25,10 @@
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.7",
+    "@types/react-slick": "^0.23.13",
+    "typescript": "^5.3.3"
   }
 }

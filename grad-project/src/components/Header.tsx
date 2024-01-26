@@ -1,23 +1,19 @@
-import Typewriter from 'typewriter-effect'
+import React, { useEffect, useRef, useState } from 'react'
+import Typewriter, { TypewriterClass } from 'typewriter-effect'
 import ThemeToggler from './ThemeToggler'
 import LanguageToggler from './LanguageToggler'
-import { useGradContext } from '@/context'
-import { useEffect, useRef, useState } from 'react'
+import { useGradContext } from '../context'
 
-const Header = () => {
+const Header: React.FC = () => {
   const { toggleLng } = useGradContext()
-  const typewriterRef = useRef(null)
+  const typewriterRef = useRef<TypewriterClass | null>(null)
+
   const [sentences, setSentences] = useState({
     tr: ['BilgeAdam Akademi', ' Öğrencileri', ' Geliştiricileri'],
     en: ['BilgeAdam Academy', ' Students', ' Developers'],
   })
-  // const writerSentences = {
-  //   tr: ['BilgeAdam Akademi Öğrencileri', 'BilgeAdam Akademi Geliştiricileri'],
-  //   en: ['BilgeAdam Academy Students', 'BilgeAdam Academy Developers'],
-  // }
 
   useEffect(() => {
-    // Typewriter'i yeniden başlat
     if (typewriterRef.current) {
       typewriterRef.current
         .pauseFor(500)
@@ -66,4 +62,5 @@ const Header = () => {
     </div>
   )
 }
+
 export default Header

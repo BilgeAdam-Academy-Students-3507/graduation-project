@@ -1,16 +1,31 @@
+import React, { useState } from 'react'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
+import { Button, CardActionArea, CardActions } from '@mui/material'
+import { useGradContext } from '../context'
+
 import classes from '../styles/Card.module.css'
 
-import { Button, CardActionArea, CardActions } from '@mui/material'
-import { useGradContext } from '@/context'
-import { useRef, useState } from 'react'
+interface Person {
+  id: number
+  fullName: string
+  description: {
+    en: string
+    tr: string
+  }
+  linkedin: string
+  github: string
+  medium: string
+  codePen: string
+  codeSandBox: string
+  portfolio: string
+}
 
 export default function ProfileCard() {
   const { peopleData, toggleLng, targetRef, addRef } = useGradContext()
-  const [hoveredCardId, setHoveredCardId] = useState(null)
+  const [hoveredCardId, setHoveredCardId] = useState<number | null>(null)
 
   return (
     <div className="cardContainer">
@@ -25,14 +40,14 @@ export default function ProfileCard() {
         </p>
       </div>
       <div className={classes.container}>
-        {peopleData.map((person) => (
+        {peopleData.map((person: Person) => (
           <div className={classes.cardContainer} key={person.id}>
             <Card
               sx={{ width: 400 }}
               className={classes.card}
               onMouseEnter={() => setHoveredCardId(person.id)}
               onMouseLeave={() => setHoveredCardId(null)}
-              ref={(element) => addRef(element)}
+              ref={(element) => addRef(element!)}
             >
               <CardActionArea>
                 <CardMedia
