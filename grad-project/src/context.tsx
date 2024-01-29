@@ -156,7 +156,7 @@ function Provider({ children }: ProviderProps) {
     },
     {
       id: 4,
-      img: 'seraykursunel.JPG',
+      img: 'seray_kursunel.JPG',
       fullName: 'Seray Kurşunel',
       description: {
         tr: "React.js'te uzmanlaşmayı hedefleyen yeni başlayan bir geliştiriciyim. Ön yüz teknolojilerinde sağlam bir temele sahibim ve etkileşimli, kullanıcı dostu web uygulamaları oluşturma konusundaki ilgim yüksek. Yeteneklerimi bir geliştirme ekibine katkıda bulunmak ve web geliştirme alanında profesyonel olarak büyümek için bir fırsat arıyorum.",
