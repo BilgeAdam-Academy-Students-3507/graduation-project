@@ -22,6 +22,29 @@ const Carousel: React.FC = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1100, // Ekran genişliği 1100px'e düştüğünde
+        settings: {
+          slidesToShow: 3, // 1100px ve altındaki ekranlarda gösterilecek slayt sayısı
+          slidesToScroll: 3, 
+        },
+      },
+      {
+        breakpoint: 768, // Ekran genişliği 768px'e düştüğünde
+        settings: {
+          slidesToShow: 2, // 768px ve altındaki ekranlarda gösterilecek slayt sayısı
+          slidesToScroll: 2, 
+        },
+      },
+      {
+        breakpoint: 480, // Ekran genişliği 480px'e düştüğünde
+        settings: {
+          slidesToShow: 1, // 480px ve altındaki ekranlarda gösterilecek slayt sayısı
+          slidesToScroll: 1, 
+        },
+      },
+    ],
   }
 
   return (
