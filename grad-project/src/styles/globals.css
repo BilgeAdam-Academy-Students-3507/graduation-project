@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  }
+
 .Typewriter {
   font-size: 4.5rem;
   width: 100%;
@@ -104,4 +108,172 @@ h3 > img:hover {
   text-align: center;
   width: 50%;
   margin: 100px auto 0 auto;
+}
+
+@media (max-width:1100px) {
+
+  /* NAVBAR */ 
+  
+  .ba-logo { 
+    scale: 0.3; 
+    width: 200px; 
+  }
+  
+  .navbar-buttons { 
+    width: 195px; 
+    gap:0; 
+  }
+  
+  /* Header */ 
+  
+  .Typewriter{ 
+    font-size: 4rem; 
+    height: 300px; 
+  }
+  
+  .slider{ 
+    margin-top: 8rem;
+  }
+  
+  /* CARDS */ 
+  
+  .cardsHeader{ 
+    width: 95%; 
+  }
+  
+  .cardsHeader h1{ 
+    line-height: 1em;
+  }
+  
+  .Card_card__JwV2g{
+    width: 341px; 
+  }
+  
+  /* Footer */ 
+  
+  .footer { 
+  text-align: center; 
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  }
+  
+  .ba-logo-small{ 
+  height: 100px;
+  }
+  
+  }
+
+
+@media (max-width:768px) {
+
+  /* NAVBAR */ 
+  
+  .ba-logo { 
+    scale: 0.3; 
+    width: 100px; 
+  }
+  
+  .navbar-buttons { 
+    width: 195px; 
+    gap:0; 
+  }
+  
+  /* Header */ 
+  
+  .Typewriter{ 
+    font-size: 3.5rem; 
+    height: 300px; 
+  }
+  
+  .slider{ 
+    margin-top: 7rem;
+  }
+  
+  /* CARDS */ 
+  
+  .cardsHeader{ 
+    width: 95%; 
+    font-size: 20px;
+  }
+  
+  .cardsHeader h1{ 
+    line-height: 1em;
+  }
+  
+  .Card_card__JwV2g{
+    width: 341px; 
+  }
+  
+  /* Footer */ 
+  
+  .footer { 
+  text-align: center; 
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 1em;
+  }
+  
+  .ba-logo-small{ 
+  height: 80px;
+  }
+  
+  }
+
+@media (max-width:480px) {
+
+/* NAVBAR */ 
+
+.ba-logo { 
+  scale: 0.3; 
+  width: 33px; 
+}
+
+.navbar-buttons { 
+  width: 195px; 
+  gap:0; 
+}
+
+/* Header */ 
+
+.Typewriter{ 
+  font-size: 3rem; 
+  height: 200px; 
+}
+
+.slider{ 
+  margin-top: 5rem;
+}
+
+/* CARDS */ 
+
+.cardsHeader{ 
+  width: 95%; 
+  font-size: 18px;
+}
+
+.cardsHeader h1{ 
+  line-height: 1em;
+}
+
+.Card_card__JwV2g{
+  width: 341px; 
+}
+
+/* Footer */ 
+
+.footer { 
+text-align: center; 
+justify-content: center;
+flex-direction: column;
+height: 100%;
+/* align-items: flex-start; */
+
+}
+
+.ba-logo-small{ 
+height: 60px;
+}
+
 }
