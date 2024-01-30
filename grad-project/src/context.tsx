@@ -109,11 +109,11 @@ function Provider({ children }: ProviderProps) {
 
     {
       id: 1,
-      img: 'https://picsum.photos/id/27/300/300',
+      img: 'kbb.png',
       fullName: 'Kevin Birkan Beyer',
       description: {
-        tr: '',
-        en: "'I am a passionate Junior Front-End Developer with experience in HTML, CSS, JavaScript, and React, always eager to learn new technologies! 🧑‍💻',",
+        tr: "İlgi çekici ve kullanıcı dostu web uygulamaları oluşturma konusunda tutkulu bir junior front-end developer'ım. HTML, CSS, JavaScript ve React'in yanı sıra API'ler ve sürüm kontrolü ile çalışma deneyimim var. Her zaman yeni teknolojileri ve en iyi uygulamaları öğrenmeye hevesliyim ve diğer geliştiriciler ve tasarımcılarla çalışmaktan keyif alıyorum.",
+        en: "I'm a junior front-end developer with a passion for creating engaging and user-friendly web applications. I have experience with HTML, CSS, JavaScript and React, as well as working with APIs and version control. I'm always keen to learn new technologies and best practices, and I enjoy working with other developers and designers.",
       },
       linkedin: 'https://www.linkedin.com/in/kevin-birkan-beyer-778704144',
       github: 'https://github.com/Kev-BB',
