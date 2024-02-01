@@ -89,4 +89,4 @@ git clone https://github.com/your_username_/graduation-project.git
 - **seraykursunel** - _Developer_ - [seraykursunel](https://github.com/seraykursunel) - \*\*
 - **mahmetdursun** - _Developer_ - [mahmetdursun](https://github.com/mahmetdursun) - \*\*
 - **bseymad** - _Developer_ - [bseymad](https://github.com/bseymad) - \*\*
-- **ogiboy** - **Developer** - [ogiboy](https://github.com/ogiboy) - \*\*
+- **ogiboy** - **_Developer_** - [ogiboy](https://github.com/ogiboy) - \*\*
