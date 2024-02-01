@@ -27,21 +27,21 @@ const Carousel: React.FC = () => {
         breakpoint: 1100, // Ekran genişliği 1100px'e düştüğünde
         settings: {
           slidesToShow: 3, // 1100px ve altındaki ekranlarda gösterilecek slayt sayısı
-          slidesToScroll: 3, 
+          slidesToScroll: 3,
         },
       },
       {
         breakpoint: 768, // Ekran genişliği 768px'e düştüğünde
         settings: {
           slidesToShow: 2, // 768px ve altındaki ekranlarda gösterilecek slayt sayısı
-          slidesToScroll: 2, 
+          slidesToScroll: 2,
         },
       },
       {
         breakpoint: 480, // Ekran genişliği 480px'e düştüğünde
         settings: {
           slidesToShow: 1, // 480px ve altındaki ekranlarda gösterilecek slayt sayısı
-          slidesToScroll: 1, 
+          slidesToScroll: 1,
         },
       },
     ],
@@ -54,7 +54,7 @@ const Carousel: React.FC = () => {
           <h3>
             <img
               width={300}
-              height={300}
+              height={350}
               src={people.img}
               alt={people.fullName}
               onClick={() => handleScroll(people.id)}

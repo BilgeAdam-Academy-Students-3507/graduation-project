@@ -171,7 +171,7 @@ function Provider({ children }: ProviderProps) {
     },
     {
       id: 5,
-      img: 'https://picsum.photos/id/247/300/300',
+      img: 'oguzcan-toptas.jpeg',
       fullName: 'H. Oğuzcan Toptaş',
       description: {
         tr: 'Merhaba! Ben Oğuzcan, bir ön yüz geliştiriciyim. Frontend teknolojilerinde, özellikle React ve Next.js ile çalışmakla beraber, yaratıcı ve problem çözücü bir bakış açısına sahibim. Yeteneklerim arasında React, JavaScript, CSS, HTML bulunmakta, ayrıca başlangıç seviyesinde TypeScript, Redux Toolkit, Tailwind yer alıyor. İşbirliği ve yeni projeler için her zaman açığım. Detaylar için iletişime geçebilirsiniz!',
