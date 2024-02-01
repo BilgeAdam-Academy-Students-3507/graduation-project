@@ -11,7 +11,7 @@ const LanguageToggler: React.FC = () => {
 
   return (
     <div className="language-toggle">
-      <Image width="20" src={trFlag} alt="Turkish" />
+      <Image width={38} height={33} src={trFlag} alt="Turkish" />
       <Switch
         value={toggleLng}
         checked={toggleLng}
@@ -20,7 +20,7 @@ const LanguageToggler: React.FC = () => {
         }}
         size="medium"
       />
-      <Image width="20" src={ukFlag} alt="English" />
+      <Image width={30} height={28} src={ukFlag} alt="English" />
     </div>
   )
 }

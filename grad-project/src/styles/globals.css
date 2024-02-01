@@ -3,11 +3,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
-  }
+}
 
 .Typewriter {
   font-size: 4.5rem;
@@ -68,6 +70,7 @@ h3 > img:hover {
 .navbar-buttons {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -110,170 +113,171 @@ h3 > img:hover {
   margin: 100px auto 0 auto;
 }
 
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
+  /* NAVBAR */
 
-  /* NAVBAR */ 
-  
-  .ba-logo { 
-    scale: 0.3; 
-    width: 200px; 
+  .ba-logo {
+    scale: 0.3;
+    width: 200px;
   }
-  
-  .navbar-buttons { 
-    width: 195px; 
-    gap:0; 
+
+  .navbar-buttons {
+    width: 250px;
   }
-  
-  /* Header */ 
-  
-  .Typewriter{ 
-    font-size: 4rem; 
-    height: 300px; 
+
+  /* Header */
+
+  .Typewriter {
+    font-size: 4rem;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
-  
-  .slider{ 
+
+  .slider {
     margin-top: 8rem;
   }
-  
-  /* CARDS */ 
-  
-  .cardsHeader{ 
-    width: 95%; 
+
+  /* CARDS */
+
+  .cardsHeader {
+    width: 95%;
   }
-  
-  .cardsHeader h1{ 
+
+  .cardsHeader h1 {
     line-height: 1em;
   }
-  
-  .Card_card__JwV2g{
-    width: 341px; 
-  }
-  
-  /* Footer */ 
-  
-  .footer { 
-  text-align: center; 
-  justify-content: center;
-  height: 100%;
-  padding: 0;
-  }
-  
-  .ba-logo-small{ 
-  height: 100px;
-  }
-  
+
+  .Card_card__JwV2g {
+    width: 341px;
   }
 
+  /* Footer */
 
-@media (max-width:768px) {
+  .footer {
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+  }
 
-  /* NAVBAR */ 
-  
-  .ba-logo { 
-    scale: 0.3; 
-    width: 100px; 
+  .ba-logo-small {
+    height: 100px;
   }
-  
-  .navbar-buttons { 
-    width: 195px; 
-    gap:0; 
+}
+
+@media (max-width: 768px) {
+  /* NAVBAR */
+
+  .ba-logo {
+    scale: 0.3;
+    width: 100px;
   }
-  
-  /* Header */ 
-  
-  .Typewriter{ 
-    font-size: 3.5rem; 
-    height: 300px; 
+
+  .navbar-buttons {
+    width: 195px;
+    gap: 0;
   }
-  
-  .slider{ 
-    margin-top: 7rem;
+
+  /* Header */
+
+  .Typewriter {
+    font-size: 3.5rem;
+    height: 200px;
   }
-  
-  /* CARDS */ 
-  
-  .cardsHeader{ 
-    width: 95%; 
+
+  /* CARDS */
+
+  .cardsHeader {
+    width: 95%;
     font-size: 20px;
   }
-  
-  .cardsHeader h1{ 
+
+  .cardsHeader h1 {
     line-height: 1em;
   }
-  
-  .Card_card__JwV2g{
-    width: 341px; 
-  }
-  
-  /* Footer */ 
-  
-  .footer { 
-  text-align: center; 
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  padding-bottom: 1em;
-  }
-  
-  .ba-logo-small{ 
-  height: 80px;
-  }
-  
+
+  .Card_card__JwV2g {
+    width: 341px;
   }
 
-@media (max-width:480px) {
+  /* Footer */
 
-/* NAVBAR */ 
+  .footer {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 1em;
+  }
 
-.ba-logo { 
-  scale: 0.3; 
-  width: 33px; 
+  .ba-logo-small {
+    height: 80px;
+  }
 }
 
-.navbar-buttons { 
-  width: 195px; 
-  gap:0; 
-}
+@media (max-width: 480px) {
+  /* NAVBAR */
 
-/* Header */ 
+  .ba-logo {
+    scale: 0.3;
+    width: 33px;
+  }
 
-.Typewriter{ 
-  font-size: 3rem; 
-  height: 200px; 
-}
+  .navbar-buttons {
+    min-height: fit-content;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    scale: 0.6;
+    padding-left: 120px;
+  }
 
-.slider{ 
-  margin-top: 5rem;
-}
+  .themeToggleContainer {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* CARDS */ 
+  /* Header */
 
-.cardsHeader{ 
-  width: 95%; 
-  font-size: 18px;
-}
+  .Typewriter {
+    font-size: 3rem;
+    height: 200px;
+  }
 
-.cardsHeader h1{ 
-  line-height: 1em;
-}
+  /* CARDS */
 
-.Card_card__JwV2g{
-  width: 341px; 
-}
+  .cardsHeader {
+    width: 95%;
+    font-size: 18px;
+  }
 
-/* Footer */ 
+  .cardsHeader h1 {
+    line-height: 1em;
+  }
 
-.footer { 
-text-align: center; 
-justify-content: center;
-flex-direction: column;
-height: 100%;
-/* align-items: flex-start; */
+  .Card_card__JwV2g {
+    width: 341px;
+  }
 
-}
+  /* Footer */
 
-.ba-logo-small{ 
-height: 60px;
-}
+  .footer {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    /* align-items: flex-start; */
+  }
 
+  .ba-logo-small {
+    height: 60px;
+  }
 }
