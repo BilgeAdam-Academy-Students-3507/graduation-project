@@ -182,7 +182,7 @@ function Provider({ children }: ProviderProps) {
       medium: 'https://medium.com/@oguzcantoptas',
       codePen: 'https://codepen.io/ogiboy',
       codeSandBox: 'https://codesandbox.io/u/ogiboy',
-      portfolio: 'link',
+      portfolio: 'portfolio-app-eight-sigma.vercel.app',
     },
     {
       id: 6,
