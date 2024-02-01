@@ -160,7 +160,7 @@ function Provider({ children }: ProviderProps) {
       fullName: 'Seray Kurşunel',
       description: {
         tr: "React.js'te uzmanlaşmayı hedefleyen yeni başlayan bir geliştiriciyim. Ön yüz teknolojilerinde sağlam bir temele sahibim ve etkileşimli, kullanıcı dostu web uygulamaları oluşturma konusundaki ilgim yüksek. Yeteneklerimi bir geliştirme ekibine katkıda bulunmak ve web geliştirme alanında profesyonel olarak büyümek için bir fırsat arıyorum.",
-        en: "Aspiring React.js Junior Developer with a solid foundation in frontend technologies and a keen interest in building interactive and user-friendly web applications. Seeking an opportunity to contribute my skills and passion for coding to a dynamic development team and grow as a professional in the field of web development.",
+        en: 'Aspiring React.js Junior Developer with a solid foundation in frontend technologies and a keen interest in building interactive and user-friendly web applications. Seeking an opportunity to contribute my skills and passion for coding to a dynamic development team and grow as a professional in the field of web development.',
       },
       linkedin: 'https://www.linkedin.com/in/seraykursunel',
       github: 'https://github.com/seraykursunel',
@@ -172,16 +172,16 @@ function Provider({ children }: ProviderProps) {
     {
       id: 5,
       img: 'https://picsum.photos/id/247/300/300',
-      fullName: 'Musa Dinç',
+      fullName: 'H. Oğuzcan Toptaş',
       description: {
-        tr: '',
-        en: '',
+        tr: 'Merhaba! Ben Oğuzcan, bir ön yüz geliştiriciyim. Frontend teknolojilerinde, özellikle React ve Next.js ile çalışmakla beraber, yaratıcı ve problem çözücü bir bakış açısına sahibim. Yeteneklerim arasında React, JavaScript, CSS, HTML bulunmakta, ayrıca başlangıç seviyesinde TypeScript, Redux Toolkit, Tailwind yer alıyor. İşbirliği ve yeni projeler için her zaman açığım. Detaylar için iletişime geçebilirsiniz!',
+        en: "Hello! I'm Oğuzcan, a front-end developer. I specialize in front-end technologies, particularly working with React and Next.js, bringing a creative and problem-solving perspective to projects. My skills include React, JavaScript, CSS, HTML, and I also have a beginner-level knowledge of TypeScript, Redux Toolkit, Tailwind. I'm open to collaboration and excited about new projects. Feel free to reach out for more details!",
       },
-      linkedin: 'link',
-      github: 'link',
-      medium: 'link',
-      codePen: 'link',
-      codeSandBox: 'link',
+      linkedin: 'https://www.linkedin.com/in/hoguzcantoptas/',
+      github: 'https://github.com/ogiboy',
+      medium: 'https://medium.com/@oguzcantoptas',
+      codePen: 'https://codepen.io/ogiboy',
+      codeSandBox: 'https://codesandbox.io/u/ogiboy',
       portfolio: 'link',
     },
     {
