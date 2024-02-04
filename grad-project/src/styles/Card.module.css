@@ -24,11 +24,14 @@
 }
 
 .card {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   height: 320px;
   transition: all 0.3s ease-in-out;
   /* padding-bottom: 1.5rem; */
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card:hover {
@@ -71,9 +74,10 @@
 .cardImg {
   border: 50% !important;
   width: 230px;
-  height: 150px;
+  /* height: 150px; */
   margin: 0.2rem auto;
   object-fit: contain;
+  background-size: contain;
 }
 
 @media (min-width: 1024px) {

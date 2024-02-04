@@ -41,7 +41,7 @@ export default function ProfileCard() {
         {peopleData.map((person: Person) => (
           <div className={classes.cardContainer} key={person.id}>
             <Card
-              sx={{ width: 341 }}
+              sx={{ width: '341px', borderRadius: '1rem' }}
               className={classes.card}
               onMouseEnter={() => setHoveredCardId(person.id)}
               onMouseLeave={() => setHoveredCardId(null)}
