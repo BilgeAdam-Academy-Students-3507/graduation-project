@@ -140,19 +140,19 @@ function Provider({ children }: ProviderProps) {
     },
     {
       id: 3,
-      img: 'https://picsum.photos/id/238/300/300',
+      img: 'brs.jpeg',
       fullName: 'İrfan Barış Özer',
       description: {
-        tr: '',
-        en: "'Language enthusiast with a huge passion for coding and Web Development. As an ambitious individual, I am constantly striving to improve and determined to make a significant impact in the industry. With my dynamic and charismatic personality, I am confident that I can bring an unparalleled level of enthusiasm and energy to any team.',",
+        tr: 'Dil meraklısı, kodlama ve Web Geliştirmeye büyük bir tutkuyla bağlıyım. Hırslı biri olarak sürekli kendimi geliştirmeye ve sektörde önemli bir etki yaratmaya kararlıyım. Dinamik ve karizmatik kişiliğimle, herhangi bir takıma eşsiz bir uyum ve enerji getirebileceğime eminim.',
+        en: 'Language enthusiast with a huge passion for coding and Web Development. As an ambitious individual, I am constantly striving to improve and determined to make a significant impact in the industry. With my dynamic and charismatic personality, I am confident that I can bring an unparalleled level of enthusiasm and energy to any team.',
       },
 
-      linkedin: 'link',
-      github: 'link',
-      medium: 'link',
-      codePen: 'link',
-      codeSandBox: 'link',
-      portfolio: 'link',
+      linkedin: 'https://www.linkedin.com/in/irfanbarisozer/',
+      github: 'https://github.com/irfanbariss',
+      medium: 'https://medium.com/@irfanbarisozer',
+      codePen: 'https://codepen.io/rfan-Bar-zer',
+      codeSandBox: 'https://codesandbox.io/u/irfanbariss',
+      portfolio: 'https://irfanbariss.github.io/portfolio/',
     },
     {
       id: 4,
