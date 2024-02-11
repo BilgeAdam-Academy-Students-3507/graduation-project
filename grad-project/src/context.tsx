@@ -186,7 +186,7 @@ function Provider({ children }: ProviderProps) {
     },
     {
       id: 6,
-      img: 'https://picsum.photos/id/247/300/300',
+      img: 'https://i.hizliresim.com/fsckn7n.JPG',
       fullName: 'B. Şeyma Doğan',
       description: {
         tr: 'Merhaba, ben motivasyonu yüksek bir Ön Uç Geliştiricisiyim, özellikle React.js üzerine çalışıyorum ve UI/UX tasarım ilkeleri konusunda bilgiliyim.',
