@@ -159,7 +159,7 @@ function Provider({ children }: ProviderProps) {
       img: 'seray_kursunel.JPG',
       fullName: 'Seray Kurşunel',
       description: {
-        tr: "React.js'te uzmanlaşmayı hedefleyen yeni başlayan bir geliştiriciyim. Ön yüz teknolojilerinde sağlam bir temele sahibim ve etkileşimli, kullanıcı dostu web uygulamaları oluşturma konusundaki ilgim yüksek. Yeteneklerimi bir geliştirme ekibine katkıda bulunmak ve web geliştirme alanında profesyonel olarak büyümek için bir fırsat arıyorum.",
+        tr: "React.js'te uzmanlaşmayı hedefleyen bir junior developerım. Front-End teknolojilerinde sağlam bir temele sahibim ve etkileşimli, kullanıcı dostu web uygulamaları oluşturma konusundaki ilgim yüksek. Yeteneklerimle bir developer ekibine katkıda bulunmak ve web geliştirme alanında profesyonel olarak büyümek için bir fırsat arıyorum.",
         en: 'Aspiring React.js Junior Developer with a solid foundation in frontend technologies and a keen interest in building interactive and user-friendly web applications. Seeking an opportunity to contribute my skills and passion for coding to a dynamic development team and grow as a professional in the field of web development.',
       },
       linkedin: 'https://www.linkedin.com/in/seraykursunel',
