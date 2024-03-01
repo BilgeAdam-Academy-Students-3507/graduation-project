@@ -120,7 +120,7 @@ function Provider({ children }: ProviderProps) {
       medium: 'https://medium.com/@Kev-BB',
       codePen: 'https://codepen.io/Kev-BB',
       codeSandBox: 'https://codesandbox.io/u/kev-bb',
-      portfolio: 'https://kev-bb.github.io/Personal-Webpage/',
+      portfolio: 'https://kevbb.vercel.app',
     },
 
     {
@@ -198,22 +198,7 @@ function Provider({ children }: ProviderProps) {
       codePen: 'https://codepen.io/bseymad',
       codeSandBox: 'https://codesandbox.io/u/bseymad',
       portfolio: 'link',
-    },
-    {
-      id: 7,
-      img: 'https://picsum.photos/id/247/300/300',
-      fullName: 'Musa Dinç',
-      description: {
-        tr: '',
-        en: '',
-      },
-      linkedin: 'link',
-      github: 'link',
-      medium: 'link',
-      codePen: 'link',
-      codeSandBox: 'link',
-      portfolio: 'link',
-    },
+    }
   ]
 
   const valueToShare: GradContextValue = {
