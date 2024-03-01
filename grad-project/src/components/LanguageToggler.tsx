@@ -19,6 +19,7 @@ const LanguageToggler: React.FC = () => {
           handleToggleLng()
         }}
         size="medium"
+        tabIndex={1}
       />
       <Image width={30} height={28} src={ukFlag} alt="English" />
     </div>
