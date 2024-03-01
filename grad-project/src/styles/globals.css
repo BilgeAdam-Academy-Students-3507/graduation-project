@@ -69,17 +69,15 @@ h3 > img:hover {
 
 .navbar-buttons {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 10px;
+  width: 200px;
+  height: 50px;
 }
 
 .ba-logo {
   scale: 0.4;
-}
-
-.themeToggleContainer {
-  scale: 0.8;
 }
 
 /* FOOTER */
@@ -220,27 +218,29 @@ h3 > img:hover {
 @media (max-width: 480px) {
   /* NAVBAR */
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .ba-logo {
     scale: 0.3;
     width: 33px;
   }
 
   .navbar-buttons {
-    min-height: fit-content;
-    width: 200px;
-    height: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 30px;
-    scale: 0.6;
-    padding-left: 120px;
+    justify-content: space-between;
+    align-items: center;
+    scale: 0.7;
+    width: 200px;
+    height: 50px;
+    /* margin: 0 auto; */
   }
 
   .themeToggleContainer {
     display: flex;
-    margin-bottom: 32px;
     justify-content: center;
     align-items: center;
   }
