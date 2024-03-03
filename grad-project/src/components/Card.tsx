@@ -146,7 +146,6 @@ export default function ProfileCard() {
             </Card>
           </div>
         ))}
-        W
       </div>
     </div>
   )
