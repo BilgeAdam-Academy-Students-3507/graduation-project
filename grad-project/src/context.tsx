@@ -96,7 +96,7 @@ function Provider({ children }: ProviderProps) {
       img: 'musadinc.JPG',
       fullName: 'Musa Dinç',
       description: {
-        tr: 'Merhaba! Ben Musa, 1 yıllık bir ön yüz geliştiriciyim ve özellikle HTML, CSS, JavaScript, React ve Redux konularında uzmanlık sahibiyim. Projelere yaratıcı, çözüm odaklı ve müşteri odaklı bir bakış açısıyla yaklaşıyorum. Takım içinde etkili iletişim becerilerine sahibim ve sürekli öğrenmeye açık bir tutum sergiliyorum. İşbirliği veya daha fazla bilgi için gönül rahatlığıyla iletişime geçebilirsiniz!',
+        tr: "Merhaba! Ben Musa, 1 yıllık bir front-end developerım'ım ve özellikle HTML, CSS, JavaScript, React ve Redux konularında uzmanlık sahibiyim. Projelere yaratıcı, çözüm odaklı ve müşteri odaklı bir bakış açısıyla yaklaşıyorum. Takım içinde etkili iletişim becerilerine sahibim ve sürekli öğrenmeye açık bir tutum sergiliyorum. İşbirliği veya daha fazla bilgi için gönül rahatlığıyla iletişime geçebilirsiniz!",
         en: "Hello! I'm Musa, a front-end developer with 1 year of experience in front-end development. I specialize in HTML, CSS, JavaScript, React, and Redux. I approach projects with a creative, solution-oriented, and customer-focused mindset. I have effective communication skills within the team and remain open to continuous learning. Feel free to reach out for collaboration or more information!",
       },
       linkedin: 'https://www.linkedin.com/in/dincmusa/',
@@ -128,7 +128,7 @@ function Provider({ children }: ProviderProps) {
       img: 'https://i.hizliresim.com/qhs23fo.jpg',
       fullName: 'Hakan Akgün',
       description: {
-        tr: 'Web Geliştirme ve Ön Uç Geliştirme konusunda yetkin, React.js kullanarak etkileyici UI / UX için bir yetenek ile kullanıcı dostu uygulamalar oluşturma konusunda uzmanlaşmış Ön Uç Geliştirici. Git, TypeScript ve Bootstrap (Framework) konularında deneyimli. Hızlı, duyarlı ve keyifli web uygulamaları oluşturmasıyla tanınır. İşbirliğine açık bir takım oyuncusu.',
+        tr: 'Web Geliştirme ve front-end development konusunda yetkin, React.js kullanarak etkileyici UI / UX için bir yetenek ile kullanıcı dostu uygulamalar oluşturma konusunda uzmanlaşmış front-end developer. Git, TypeScript ve Bootstrap (Framework) konularında deneyimli. Hızlı, duyarlı ve keyifli web uygulamaları oluşturmasıyla tanınır. İşbirliğine açık bir takım oyuncusu.',
         en: 'Frontend Developer proficient in Web Development and Front-End Development, specializing in creating userfriendly applications with a flair for impressive UI/UX using React.js. Experienced in Git, TypeScript, and Bootstrap (Framework). Known for building fast, responsive, and delightful web apps. A collaborative team player open to cooperation.',
       },
       linkedin: 'https://www.linkedin.com/in/hakankgn16',
@@ -182,14 +182,14 @@ function Provider({ children }: ProviderProps) {
       medium: 'https://medium.com/@oguzcantoptas',
       codePen: 'https://codepen.io/ogiboy',
       codeSandBox: 'https://codesandbox.io/u/ogiboy',
-      portfolio: 'portfolio-app-eight-sigma.vercel.app',
+      portfolio: 'https://www.oguzcantoptas.com',
     },
     {
       id: 6,
       img: 'https://i.hizliresim.com/fsckn7n.JPG',
       fullName: 'B. Şeyma Doğan',
       description: {
-        tr: 'Merhaba, ben motivasyonu yüksek bir Ön Uç Geliştiricisiyim, özellikle React.js üzerine çalışıyorum ve UI/UX tasarım ilkeleri konusunda bilgiliyim.',
+        tr: "Merhaba, ben motivasyonu yüksek bir front-end developer'ım, özellikle React.js üzerine çalışıyorum ve UI/UX tasarım ilkeleri konusunda bilgiliyim.",
         en: 'Hello, I am a highly motivated Frontend Developer, my expertise lies in React.js, and I am well-versed in UI/UX design principles.',
       },
       linkedin: 'https://www.linkedin.com/in/bseymad/',
@@ -198,7 +198,7 @@ function Provider({ children }: ProviderProps) {
       codePen: 'https://codepen.io/bseymad',
       codeSandBox: 'https://codesandbox.io/u/bseymad',
       portfolio: 'link',
-    }
+    },
   ]
 
   const valueToShare: GradContextValue = {
