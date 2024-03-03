@@ -3,6 +3,7 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
+import Wave from 'react-wavify'
 import { Button, CardActionArea, CardActions } from '@mui/material'
 import { useGradContext } from '../context'
 
@@ -27,16 +28,46 @@ export default function ProfileCard() {
   const { peopleData, toggleLng, targetRef, addRef } = useGradContext()
   const [hoveredCardId, setHoveredCardId] = useState<number | null>(null)
 
+  const WaveElement = () => {
+    return (
+      <div>
+        <Wave
+          options={{
+            amplitude: 35,
+            speed: 0.2,
+            points: 3,
+          }}
+          className="up-wave"
+          fill="#1864ab"
+          style={{ display: 'flex' }}
+        />
+
+        <div className="cardsHeader">
+          <h1> {toggleLng ? 'About The Project' : 'Proje Hakkında'}</h1>
+          <p style={{ marginTop: 30 }}>
+            {toggleLng
+              ? 'Our website is a platform that highlights the students who have completed the front-end development bootcamp. This website features a gallery of students, along with their names and a brief description of their profile. Visitors can browse through the gallery and learn more about each student by clicking on the provided links.'
+              : 'Web sitemiz, front-end development eğitimini tamamlayan öğrencileri öne çıkaran bir platformdur. Bu web sitesinde öğrencilerin isimleri ve profillerinin kısa bir açıklamasıyla birlikte bir galeri yer almaktadır. Ziyaretçiler galeriye göz atabilir ve verilen bağlantılara tıklayarak her öğrenci hakkında daha fazla bilgi edinebilir.'}
+          </p>
+        </div>
+        <Wave
+          options={{
+            amplitude: 45,
+            speed: 0.2,
+            points: 3,
+          }}
+          className="down-wave"
+          fill="#eee"
+          style={{ display: 'flex' }}
+        />
+        <hr style={{ margin: '10px' }} />
+      </div>
+    )
+  }
+
   return (
     <div className="cardContainer">
-      <div className="cardsHeader">
-        <h1> {toggleLng ? 'About The Project' : 'Proje Hakkında'}</h1>
-        <p style={{ marginTop: 30 }}>
-          {toggleLng
-            ? 'Our website is a platform that highlights the students who have completed the front-end development bootcamp. This website features a gallery of students, along with their names and a brief description of their profile. Visitors can browse through the gallery and learn more about each student by clicking on the provided links.'
-            : 'Web sitemiz, front-end development eğitimini tamamlayan öğrencileri öne çıkaran bir platformdur. Bu web sitesinde öğrencilerin isimleri ve profillerinin kısa bir açıklamasıyla birlikte bir galeri yer almaktadır. Ziyaretçiler galeriye göz atabilir ve verilen bağlantılara tıklayarak her öğrenci hakkında daha fazla bilgi edinebilir.'}
-        </p>
-      </div>
+      <WaveElement />
       <div className={classes.container}>
         {peopleData.map((person: Person) => (
           <div className={classes.cardContainer} key={person.id}>
@@ -115,6 +146,7 @@ export default function ProfileCard() {
             </Card>
           </div>
         ))}
+        W
       </div>
     </div>
   )

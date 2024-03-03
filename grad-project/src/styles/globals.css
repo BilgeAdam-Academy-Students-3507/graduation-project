@@ -103,12 +103,16 @@ h3 > img:hover {
 }
 
 .cardsHeader {
-  padding-top: 70px;
+  padding-top: 10px;
   line-height: 2rem;
   font-size: 24px;
   text-align: center;
   width: 50%;
   margin: 100px auto 0 auto;
+}
+
+.up-wave {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 1100px) {
