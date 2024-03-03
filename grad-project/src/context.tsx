@@ -182,7 +182,7 @@ function Provider({ children }: ProviderProps) {
       medium: 'https://medium.com/@oguzcantoptas',
       codePen: 'https://codepen.io/ogiboy',
       codeSandBox: 'https://codesandbox.io/u/ogiboy',
-      portfolio: 'portfolio-app-eight-sigma.vercel.app',
+      portfolio: 'https://www.oguzcantoptas.com',
     },
     {
       id: 6,
@@ -198,7 +198,7 @@ function Provider({ children }: ProviderProps) {
       codePen: 'https://codepen.io/bseymad',
       codeSandBox: 'https://codesandbox.io/u/bseymad',
       portfolio: 'link',
-    }
+    },
   ]
 
   const valueToShare: GradContextValue = {
